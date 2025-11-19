@@ -7,9 +7,9 @@ import (
 
 func main() {
 
-	e := 3 >> 3
+	e := 13 << 3
 
 	fmt.Println(e)
-	array.Addsliceofnumbers([]int{9, 9, 9}, []int{23, 3, 2, 5})
-	// bit.AdditionWithoutOperation(3, 5)
+	sum := array.AddSliceOfTwoNumbers([]int{99, 99, 99}, []int{993, 93, 29, 59})
+	fmt.Println(sum)
 }

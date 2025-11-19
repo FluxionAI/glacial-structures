@@ -1,25 +1,25 @@
 package array
 
 import (
+	"slices"
 	"testing"
 )
 
-func TestAddSliceOfNumbers(t *testing.T) {
+func TestAddSliceOfTwoNumbers(t *testing.T) {
 	tests := []struct {
 		num1, num2, sum []int
 	}{
-		{[]int{2}, []int{4}, []int{6}},
+		{[]int{1}, []int{}, []int{1}},
+		{[]int{1}, []int{0}, []int{1}},
+		{[]int{1}, []int{1}, []int{2}},
+		{[]int{1}, []int{9}, []int{1, 0}},
+		{[]int{2, 5}, []int{3, 5}, []int{6, 0}},
+		{[]int{2, 9}, []int{9, 9, 9}, []int{1, 0, 2, 8}},
+		{[]int{9, 9, 9}, []int{9, 9, 9}, []int{1, 9, 9, 8}},
 	}
-
 	for i, test := range tests {
-		expected := AddSliceOfNumbers(test.num1, test.num2)
-		if len(expected) != len(test.sum) {
-			t.Errorf("addSliceOperation of %d is not matching", i)
-		}
-		for j := 0; j < len(expected); j++ {
-			if expected[i] != test.sum[i] {
-				t.Errorf("addSliceOperation of %d is not matching", i)
-			}
+		if got := AddSliceOfTwoNumbers(test.num1, test.num2); !slices.Equal(got, test.sum) {
+			t.Fatalf("Failed test case #%d. Want %v got %v", i, test.sum, got)
 		}
 	}
 }
