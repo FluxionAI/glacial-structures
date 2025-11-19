@@ -20,7 +20,7 @@ type ParseConf struct {
 
 const (
 	repoAddress = "https://github.com/spring1843/go-dsa/tree/"
-	mainBranch  = "main"
+	mainBranch  = "master"
 )
 
 var rehearsalRegex = regexp.MustCompile(`(?s)(## Rehearsal\n.*?)(\n##|\z)`)
