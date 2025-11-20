@@ -22,7 +22,7 @@ var exportMDCommand = &cobra.Command{
 		}
 
 		nonSectionMDFiles := []string{
-			// "README.md",
+			"README.md",
 			// "preface.md",
 			// "complexity.md",
 		}
