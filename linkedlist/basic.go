@@ -94,7 +94,6 @@ func (l *LinkedList) Length() int {
 
 // Print displays the linked list.
 func (l *LinkedList) Print() {
-
 	currect := l.head
 
 	for currect != nil {

@@ -1,8 +1,9 @@
 package bit_test
 
 import (
-	"glacial-structures/bit"
 	"testing"
+
+	"glacial-structures/bit"
 )
 
 func TestAdditionWithoutArithmeticOperators(t *testing.T) {
