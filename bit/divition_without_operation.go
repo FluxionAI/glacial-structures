@@ -1,6 +1,7 @@
 package bit
 
-func DivtionWithoutArithamethicOperation(x, y int) int {
+// Divide solves the problem in O(1) time and O(1) space.
+func Divide(x, y int) int {
 	quotient := 0
 	power := uint64(32)
 	yPower := y << power

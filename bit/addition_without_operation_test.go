@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestAdditionWithoutOperation(t *testing.T) {
+func TestAdditionWithoutArithmeticOperators(t *testing.T) {
 	tests := []struct {
 		a, b     int
 		expected int
@@ -19,10 +19,10 @@ func TestAdditionWithoutOperation(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := bit.AdditionWithoutOperation(test.a, test.b)
+		result := bit.AdditionWithoutArithmeticOperators(test.a, test.b)
 
 		if result != test.expected {
-			t.Errorf("AdditionWithoutOperation(%d, %d) = %d; expected %d", test.a, test.b, result, test.expected)
+			t.Errorf("AdditionWithoutArithmeticOperators (%d, %d) = %d; expected %d", test.a, test.b, result, test.expected)
 		}
 	}
 }
