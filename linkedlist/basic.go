@@ -56,7 +56,7 @@ func (l *LinkedList) RemoveFirst() {
 	l.head = l.head.next
 }
 
-// RemoveLast deletes the last node
+// RemoveLast deletes the last node.
 func (l *LinkedList) RemoveLast() {
 	currect := l.head
 
@@ -66,7 +66,7 @@ func (l *LinkedList) RemoveLast() {
 	currect.next = nil
 }
 
-// RemoveAt deletes node at given index
+// RemoveAt deletes node at given index.
 func (l *LinkedList) RemoveAt(index int) {
 	currect := l.head
 	for i := 0; i < index-1; i++ {
@@ -75,7 +75,7 @@ func (l *LinkedList) RemoveAt(index int) {
 	currect.next = currect.next.next
 }
 
-// Find searches for a value and returns its index
+// Find searches for a value and returns its index.
 func (l *LinkedList) Find(value int) int {
 	current := l.head
 
