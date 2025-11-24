@@ -1,9 +1,5 @@
 package linkedlist
 
-import (
-	"fmt"
-)
-
 // Node represents each element in the linked list
 type Node struct {
 	data int
@@ -112,25 +108,6 @@ func (l *LinkedList) Print() {
 	currect := l.head
 
 	for currect != nil {
-		fmt.Printf("->", l.head.data)
 		l.head = l.head.next
 	}
-}
-
-func main() {
-	list := LinkedList{}
-
-	list.AddFirst(10)
-	list.AddLast(20)
-	list.AddLast(30)
-	list.AddAt(1, 15)
-	list.Print()
-
-	fmt.Println("Index of 20:", list.Find(20))
-	fmt.Println("Length:", list.Length())
-
-	list.RemoveFirst()
-	list.RemoveLast()
-	list.RemoveAt(1)
-	list.Print()
 }
