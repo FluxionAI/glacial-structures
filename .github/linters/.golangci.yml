@@ -20,6 +20,7 @@ issues:
     - nosnakecase
     - scopelint
     - ifshort
+    - execinquery
   exclude-rules:
     - path: /
       linters:
@@ -39,6 +40,11 @@ issues:
         - dupword
 linters:
   enable-all: true
+  disable:
+    - nosnakecase
+    - scopelint
+    - ifshort
+    - execinquery
 
 linters-settings:
   forbidigo:
