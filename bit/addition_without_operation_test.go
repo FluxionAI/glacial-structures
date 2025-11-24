@@ -1,9 +1,7 @@
-package bit_test
+package bit
 
 import (
 	"testing"
-
-	"glacial-structures/bit"
 )
 
 func TestAdditionWithoutArithmeticOperators(t *testing.T) {
@@ -20,7 +18,7 @@ func TestAdditionWithoutArithmeticOperators(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := bit.AdditionWithoutArithmeticOperators(test.a, test.b)
+		result := AdditionWithoutArithmeticOperators(test.a, test.b)
 
 		if result != test.expected {
 			t.Errorf("AdditionWithoutArithmeticOperators (%d, %d) = %d; expected %d", test.a, test.b, result, test.expected)
