@@ -14,8 +14,6 @@ type LinkedList struct {
 
 // AddFirst inserts a node at the beginning.
 func (l *LinkedList) AddFirst(value int) {
-	NewNode := &Node{data: value}
-	NewNode.next = l.head
 }
 
 // AddLast inserts a node at the end.
@@ -89,17 +87,13 @@ func (l *LinkedList) Find(value int) int {
 	return 0
 }
 
-// Length returns size of list
+// Length returns size of list.
 func (l *LinkedList) Length() int {
 	return l.size
 }
 
-// Print displays the linked list
+// Print displays the linked list.
 func (l *LinkedList) Print() {
-	// for i := 0; i < l.size; i++ {
-	// 	fmt.Printf("->", l.head.data)
-	// 	l.head = l.head.next
-	// }
 
 	currect := l.head
 
