@@ -64,8 +64,8 @@ func main() {
 
 	e = bit.DivtionWithoutArithamethicOperation(x, y)
 	fmt.Println(e)
-
 	// AND operator
+
 	// 0001 & 0010 = 0000
 	// 	z = x & y
 	// 	fmt.Printf("AND Operator: %d\n", z)
@@ -86,7 +86,7 @@ func main() {
 	// 	z = 5 << 2
 	// 	fmt.Printf("LEFT SHIFT: %d\n", z)
 
-	// // RIGHT SHIFT [Act as div]
+	// // RIGHT SH	IFT [Act as div]
 	// // x >> 1 = 1 >> 1 = 0
 	// // 0001 >> 0001 = 0000
 	// z = 6 >> 1
