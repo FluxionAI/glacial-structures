@@ -18,7 +18,7 @@ func (l *LinkedList) AddFirst(value int) {
 	NewNode.next = l.head
 }
 
-// AddLast inserts a node at the end
+// AddLast inserts a node at the end.
 func (l *LinkedList) AddLast(value int) {
 	NewNode := &Node{data: value}
 
@@ -36,7 +36,7 @@ func (l *LinkedList) AddLast(value int) {
 	l.size++
 }
 
-// AddAt inserts at a specific index
+// AddAt inserts at a specific index.
 func (l *LinkedList) AddAt(index int, value int) {
 	current := l.head
 	prev := current
@@ -48,7 +48,7 @@ func (l *LinkedList) AddAt(index int, value int) {
 	prev.next = &newNode
 }
 
-// RemoveFirst deletes the first node
+// RemoveFirst deletes the first node.
 func (l *LinkedList) RemoveFirst() {
 	if l.head.next == nil {
 		l.head = nil
