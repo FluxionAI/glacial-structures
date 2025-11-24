@@ -18,10 +18,18 @@ func TestNewRehearsalEntry(t *testing.T) {
 	}
 
 	if len(entries) != 6 {
-		t.Fatalf("expected 5 entries, got %d", len(entries))
+		t.Fatalf("expected 6 entries, got %d", len(entries))
 	}
 
-	strOutput := stringRehearsalEntries(entries)
+	conf := &ParseConf{
+		Dir:                    ".",
+		Section:                "test",
+		ReplacePackageWithMain: false,
+		ReplaceWithLiveLinks:   false,
+		Version:                "",
+	}
+
+	strOutput := stringRehearsalEntries(conf, entries)
 	if strOutput == "" {
 		t.Fatal("expected non-empty string, got empty string")
 	}
