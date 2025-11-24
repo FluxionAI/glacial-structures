@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-// Helper to build a preset list
+// Helper to build a preset list.
 func sampleList() *LinkedList {
 	l := &LinkedList{}
 	l.AddLast(10)
@@ -110,7 +110,7 @@ func TestLength(t *testing.T) {
 	}
 }
 
-// Smoke test for Print()
+// Smoke test for Print().
 func TestPrint(t *testing.T) {
 	l := sampleList()
 

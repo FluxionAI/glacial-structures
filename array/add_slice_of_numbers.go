@@ -1,9 +1,8 @@
 package array
 
 // if i have slice of [99] [9,9]
-// what will be the sum ? in which decimal i need to set
+// what will be the sum ? in which decimal i need to set.
 func AddSliceOfTwoNumbers(num1, num2 []int) []int {
-
 	num1, num2 = equlizer(num1, num2)
 
 	carry := false
@@ -25,7 +24,6 @@ func AddSliceOfTwoNumbers(num1, num2 []int) []int {
 	}
 
 	return num1
-
 }
 
 func equlizer(num1, num2 []int) ([]int, []int) {
@@ -38,7 +36,6 @@ func equlizer(num1, num2 []int) ([]int, []int) {
 			num1 = append(razer, num1...)
 		}
 	}
-
 	return num1, num2
 }
 

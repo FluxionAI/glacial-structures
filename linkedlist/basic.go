@@ -1,18 +1,18 @@
 package linkedlist
 
-// Node represents each element in the linked list
+// Node represents each element in the linked list.
 type Node struct {
 	data int
 	next *Node
 }
 
-// LinkedList structure
+// LinkedList structure.
 type LinkedList struct {
 	head *Node
 	size int
 }
 
-// AddFirst inserts a node at the beginning
+// AddFirst inserts a node at the beginning.
 func (l *LinkedList) AddFirst(value int) {
 	NewNode := &Node{data: value}
 	NewNode.next = l.head
@@ -70,11 +70,9 @@ func (l *LinkedList) RemoveLast() {
 func (l *LinkedList) RemoveAt(index int) {
 	currect := l.head
 	for i := 0; i < index-1; i++ {
-
 		currect = l.head.next
 	}
 	currect.next = currect.next.next
-
 }
 
 // Find searches for a value and returns its index
@@ -89,7 +87,6 @@ func (l *LinkedList) Find(value int) int {
 	}
 
 	return 0
-
 }
 
 // Length returns size of list
@@ -99,7 +96,6 @@ func (l *LinkedList) Length() int {
 
 // Print displays the linked list
 func (l *LinkedList) Print() {
-
 	// for i := 0; i < l.size; i++ {
 	// 	fmt.Printf("->", l.head.data)
 	// 	l.head = l.head.next

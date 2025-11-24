@@ -22,5 +22,4 @@ func TestSelectionSortArray(t *testing.T) {
 			t.Fatalf("Failed test case #%d. Want %v got %v", i+1, example.expected, got)
 		}
 	}
-
 }
